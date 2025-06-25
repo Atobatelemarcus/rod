@@ -43,7 +43,7 @@ await set( ref(db, "users/"+user.uid), {
     uid:user.uid
 });
 alert("registration successful");
-window.location.href="index.html";
+window.location.href="./index.html";
 } catch(err){
     alert("Error:"+ err.message);
 }
