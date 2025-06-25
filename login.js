@@ -20,10 +20,10 @@ try{
     const role = userdata.role;
 
     if(role==="STUDENT"){
-      window.location.href="./student.html"
+      window.location.href="student.html"
     }
     else if(role==="ADMIN"){
-      window.location.href='./admin.html' 
+      window.location.href='admin.html' 
     } else{
       alert("unknown role.contact support");
     }
