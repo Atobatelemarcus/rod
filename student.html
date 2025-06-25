@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STUDENT DASHBOARD</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+<div class="flex-col space-y-6 min-h-screen md:flex-row bg-gray-300">
+  <div class="flex bg-violet-500 m-3 min-w rounded-lg shadow-inner  md:rounded-xl md:bg-blue-500">
+    <div class="p-4">
+        <button  onclick="opensidebar" id="sidebar1">
+    <i class="fas fa-bars"></i>
+  </button>
+  <!-- Sidebar -->
+  <div id="sideBar" class="fixed top-0 left-0 h-full w-64 shadow-lg text-white p-4 z-40">
+    <h2 class="text-xl font-bold mb-4">PROFILE</h2>
+    <button id="sidebar2" class="mb-4 text-white bg-purple-500 hover:bg-blue-600 px-4 py-2 rounded"> &times;</button>
+    <ul>
+      <li class="mb-2"><a href="#">Personal profile</a></li>
+      <li class="mb-2" id="srole">STUDENT</li>
+       <button class=" mb-4 hover:bg-gray-400 w-full rounded-lg bg-green-500"><a href="paymemt.html"> PAY FEES</a></button>
+        <button class="  mb-4  hover:bg-black w-full rounded-lg bg-yellow-400"><a href="paymemt.html"> CHECK RESULT</a></button>
+       <li class="mb-2 text-crimson-400"><a href="index.html" class="text-red-500 font-bold">LOGOUT</a></li>
+    </ul>
+  </div>
+
+  <!-- Overlay (optional) -->
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-40 hidden z-30">
+  </div>
+    </div>
+    <!--Main body-->
+  <div class="items-center md:items-center md:m-auto lg:m-auto>
+    <h3 class="text-center items-center text-white pt-2 font-bold"> WELCOME TO DECENT UNIVERSITY </h3>
+  </div>
+</div>
+    <div class="flex m-4 bg-violet-500 min-w rounded-lg shadow-lg border-violet-500 md:bg-violet-500" >
+    <p class="text-center text-white text-sm font-serif md:text-center m-auto md:text-md">
+      You are now a student of <span class="text-red-500 font-bold md:text-black">MECHANICAL ENGINEERING</span> department.The school of <span id="school" class="text-green">ENGINEERING</span></p>
+  </div>
+  <div class=" flex flex-col bg-purple-700 rounded-lg min-w mx-5 h-24">
+    <p id="date" class="text-xs m-2"></p>
+    <p class="text-center items-center font-serif mt-1 text-sm md:text-xl"> Welcome back <span class="font-mono text-white" id="name1"></span>
+    </p><p class="text-xs m-auto"> Always stay updated on your Flex student portal</p>
+  </div>
+  <div class="flex">
+      <p class="text-xs font-serif mx-5 mt-3 font-bold text-center items-center md:text-xl">PERSONAL INFORMATION AND SCHOOL INFORMATION </p>
+  </div>
+
+  <div class="grid md:grid-cols-2">
+      <div class="bg-purple-700 m-4 rounded-lg">
+        <div class="grid grid-cols-2 gap-4">
+          <p class="text-sm font-serif font-bold text-white p-3"> NAME: <span class="text-sm" id="name"></span></p>
+     <p class="p-3 text-sm font-serif font-bold text-white">DOB:<span id="dob"></span></p>
+     </div>
+     
+    <div class="grid grid-cols-2 gap-4">
+     <p class="p-3 text-white font-serif text-sm font-bold"> GENDER: <span class="text-white" id="gender"></span></p>
+       <p class="p-3 text-white font-serif text-sm font-bold"> MAIL: <span class="text-white" id="mail"> </span></p>
+       </div>
+       <div class="grid grid-cols-2 gap-4">
+     <p class="p-3 text-white font-serif text-sm font-bold"> STATE OF ORIGIN: <span class="text-white" id="state"></span></p>
+       <p class="p-3 text-white font-serif text-sm font-bold"> PHONE: <span class="text-white" id="phone" ></span></p>
+       </div>
+      </div>
+    <div class="bg-purple-700 rounded-lg m-4">
+      <p class="p-3 text-white font-serif text-sm font-bold"> MATRIC: <span class="text-white"id="matric"> DU/ME/25/2-00030</span></p>
+      <p class="p-3 text-white font-serif text-sm font-bold"> DEPARTMENT: <span class="text-white" id="dept">MECHANICAL ENGINEERING</span></p>
+      <p class="p-3 text-white font-serif text-sm font-bold">DEGREE: <span class="text-white" id="course">B.TECH</span></p>
+      <p class="p-3 text-white font-serif text-sm font-bold">BATCH: <span class="text-white" id="batch">2025</span></p>
+  <p class="p-3 text-white font-serif text-sm font-bold">STATUS:<span class="text-white" id="status">CURRENT</span></p>
+    </div>
+  </div>
+  <div class="bg-white border rounded-lg shadow-md min-w mx-4 py-4 mb-4">
+  <div class="bg-gray-500 w-64 h-4 rounded-lg mb-4">
+    <div class="bg-green-500 w-1/2 h-4 rounded-lg" id="progress-bar"></div>
+  </div>
+  </div>
+  <p class="items-center text-black"> You've paid <span>50%</span>of your school fee</p>
+  <p> you just paid <span id="amountpaid"></span></p>
+  </div>
+</div>
+   <footer class="bg-black flex-row h-70 text-white text-sm mt-4 h-10">
+  <div class="flex-col items-center justify-center w-full">
+    <p class="text-center text-white text-sm font-serif md:text-center m-auto md:text-md">
+      &copy; 2025 DECENT UNIVERSITY. All rights reserved.
+    </p>
+    <div class="text-center text-white text-sm font-serif md:text-center m-auto md:text-md">
+       <p> Decent university street,Ojodu Berger,Lagos state</p> 
+     </div>
+
+  </div>
+  </footer>
+  <script src="student.js"></script>
+     <script type="module" src="dashboard1.js"></script>
+     <script type="module" src="studentup.js"></script>
+      <script type="module" src="dashboardup.js"></script>
+</body>
+
+</html>

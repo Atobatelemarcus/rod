@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ADMIN DASHBOARD</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="flex-col  space-y-6 min-h-screen md:flex-row bg-gray-400 mb-4">
+ <div class="flex bg-violet-500 m-3 min-w rounded-lg shadow-inner  md:rounded-xl md:bg-blue-500">
+    <div class="p-4">
+        <button  onclick="opensidebar" id="sidebar1">
+    <i class="fas fa-bars"></i>
+  </button>
+  <!-- Sidebar -->
+ <div id="sideBar" class="fixed top-0 left-0 h-full w-64 shadow-lg text-white p-4 z-40">
+    <h2 class="text-xl font-bold mb-4">PROFILE</h2>
+    <button id="sidebar2" class="mb-4 text-white bg-purple-500 hover:bg-blue-600 px-4 py-2 rounded" onclick="closeSideBar()"> &times;</button>
+    <ul>
+      <li class="mb-2"><a href="">Personal profile</a></li>
+      <li class="mb-2" id="arole">Admin</li>
+       <li class="mb-2 text-red-500"><a href="index.html">LOGOUT</a></li>
+    </ul>
+  </div>
+
+  <!-- Overlay (optional) -->
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-40 hidden z-30">
+  </div>
+    </div>
+    <!--Main body-->
+  <div class="items-center md:items-center md:m-auto lg:m-auto">
+    <h3 class="text-center  text-xl items-center text-white font-serif font-bold"> WELCOME TO DECENT UNIVERSITY </h3>
+  </div>
+</div>
+    <div class="flex m-4 bg-violet-500 min-w rounded-lg shadow-lg border-violet-500 md:bg-violet-500" >
+    <p class="text-center text-white text-md md:text-lg font-serif md:text-center m-auto md:text-md">
+      You are now an admin in <span class="text-crimson-400  text-md font-bold md:text-black-500">MECHANICAL ENGINEERING</span> department.The school of <span id="school" class="text-green">ENGINEERING</span></p>
+  </div>
+  <div class=" flex flex-col bg-purple-700 rounded-lg min-w mx-5 h-24">
+    <p  class="text-sm m-2" id="date"> 2/2/2025</p>
+    <p class="text-center text-md  text-lg font-serif mt-1 md:text-xl"> Welcome back admin: <span class="font-mono text-white" id="sname"></span>
+    </p><p class="text-md text-center m-auto"> Always oversee student activities</p>
+  </div>
+  <div class="flex">
+      <p class="text-xs font-serif mx-5 mt-3 font-bold text-center items-center md:text-xl">PERSONAL INFORMATION  </p>
+  </div>
+
+  <div class="grid md:grid-cols-2">
+      <div class="bg-purple-700 m-4 rounded-lg">
+        <div class="grid grid-cols-2 gap-4">
+          <p class="text-lg font-serif font-bold text-white p-3"> NAME: <span class="text-lg" id="uname"> </span></p>
+     <p class="p-3 text-lg font-serif font-bold text-white">DOB:<span id="sdob"></span></p>
+     </div>
+     
+    <div class="grid grid-cols-2 gap-4">
+     <p class="p-3 text-white font-serif text-lg font-bold"> GENDER: <span class="text-white" id="sgender"></span></p>
+       <p class="p-3 text-white font-serif text-lg font-bold"> MAIL: <span class="text-white" id="smail"></span></p>
+       </div>
+       <div class="grid grid-cols-2 gap-4">
+     <p class="p-3 text-white font-serif text-lg font-bold"> LEVEL: <span class="text-white">SENIOR LECTURER</span></p>
+       <p class="p-3 text-white font-serif text-lg font-bold"> PHONE: <span class="text-white" id="sphone">07044592369</span></p>
+       </div>
+      </div>
+    <div class="bg-purple-700 rounded-lg m-4">
+      <p class="p-3 text-white font-serif text-lg font-bold"> CURRENT OFFICE: <span class="text-white"> STUDENT COORDINATOR</span></p>
+      <p class="p-3 text-white font-serif text-lg font-bold"> DEPARTMENT: <span class="text-white" id="adept">MECHANICAL ENGINEERING</span></p>
+      <p class="p-3 text-white font-serif text-lg font-bold">QUALIFICATIONS: <span class="text-white">DOCTORATE DEGREE</span></p>
+      <a href="adminupdate.html"><button class="bg-blue-700 text-white p-2 rounded-lg m-3 hover:bg-green-600"> EDIT STUDENT PORTAL</button></a>
+      <a href="adminReg.html"><button class="bg-pink-400 text-white p-2 rounded-lg m-3 hover:bg-green-600"> ADMIN REG</button></a>
+     
+  <p class="p-3 text-white font-serif text-lg font-bold">NUMBER OF STUDENTS:<span class="text-white" id="totalstudents">200</span></p>
+    </div>
+  </div>
+  <div class="bg-white rounded-lg shadow-md min-w m-4">
+  <div class="bg-gray-200 w-full h-4 rounded-lg mt-">
+  </div>
+  <div class="flex flex-col items-center justify-center p-4">
+    <h2 class="text-xl font-bold mb-4">STUDENT LIST</h2>
+    <table class="min-w-full bg-white">
+      <thead>
+        <tr>
+          <th class="py-2 px-4 border-b" id="gg">Name</th>
+          <th class="py-2 px-4 border-b" id="matric">Matric Number</th>
+          <th class="py-2 px-4 border-b" id="ubatch">Batch</th>
+          <th class="py-2 px-4 border-b" id="ustatus">status</th>
+          <th class="py-2 px-4 border-b" id="ufees">Fees</th>
+        </tr>
+      </thead>
+      <tbody id="student-list">
+        <!-- Student data will be dynamically inserted here -->
+      </tbody>
+    </table>
+</div>
+  <footer class="bg-black flex-row h-70 text-white text-sm mt-2 h-10">
+  <div class="flex-col items-center justify-center w-full">
+    <p class="text-center text-white text-sm font-serif md:text-center m-auto md:text-md">
+      &copy; 2025 DECENT UNIVERSITY. All rights reserved.
+    </p>
+    <div class="text-center text-white text-sm font-serif md:text-center m-auto md:text-md">
+       <p> Decent university street,Ojodu Berger,Lagos state</p> 
+     </div>
+
+  </div>
+  </footer>
+  <script src="student.js"></script>
+   <script type="module" src="dashboard.js"></script>
+    <script type="module" src="dashboardup.js"></script>
+
+</body>
+
+</html>

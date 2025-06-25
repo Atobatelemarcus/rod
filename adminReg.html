@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>DECENT UNIVERSITY REG-FoRM</title>
+  
+  <!-- HTML -->
+  
+
+  
+    <!-- Custom Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+ </head>
+
+<body class="bg-gray-300 px-4 py-8">
+  <div class="text-white m-4 W-full rounded-md bg-blue-600 shadow-lg border-blue-700 md:bg-blue-500">
+     <h3 class="text-md text-center"> DECENT UNIVERSITY </h3> 
+  </div>
+  <div class=" min-h-screen max-w-md mx-auto ">
+
+<form id="signupform" class="bg-white p-6 rounded-xl shadow-md">
+      <div class="mb-4 text-blue-700">
+        <p class="text-blue-700 text-xl  text-center mb-4">STUDENT REGISTRATION FORM</p>
+        <p class="text-blue-700  text-center text-lg mb-4">Please fill in the form below to register</p>
+  </div>
+        
+      <div class="mb-4 text-center text-blue-700">
+      <label for="Fullname">FULLNAME</label><br>
+      <input type="text" name="Fullname" id="fullname" placeholder="Full name" class=" text-blue-700 border border-blue-500  rounded-md py-2 px-4 mb-4 w-full
+      focus:outline-none focus:ring-2 focus:ring-blue-400">
+      </div>
+      <div class="mb-4 text-center text-blue-700">
+      <label for="password">PASSWORD</label><br>
+      <input type="password" name="password" id="password" placeholder="Password" class=" text-blue-700 border border-blue-500  rounded-md py-2 px-4 mb-4 w-full
+      focus:outline-none focus:ring-2 focus:ring-blue-400">
+      </div>
+      <div class="mb-4 text-center text-blue-700">
+        <label for="email">MAIL</label><br>
+        <input type="text" name="email" id="email" placeholder="Email" class=" text-blue-700  border border-blue-700 rounded-md py-2 px-4 mb-4 w-full">
+        </div>
+<div class="mb-4 text-center text-blue-700">
+      <label for="AGE">PHONE</label><br>
+      <input type="number" name="phone" id="phone" placeholder="phone" class=" text-blue-700 border border-blue-500  rounded-md py-2 px-4 mb-4 w-full
+      focus:outline-none focus:ring-2 focus:ring-blue-400">
+       </div>
+
+       <div class="mb-4 text-center text-blue-700">
+      <label for="AGE">DATE OF BIRTH</label><br>
+      <input type="date" name="date" id="date" placeholder="Date of birth" class=" text-blue-700 border border-blue-500  rounded-md py-2 px-4 mb-4 w-full
+      focus:outline-none focus:ring-2 focus:ring-blue-400">
+       </div>
+       <div class="mb-4 text-center text-blue-700">
+      <label for="STATE">STATE OF ORIGIN</label><br>
+      <input type="text" name="state" id="state" placeholder="state of origin" class=" text-blue-700 border border-blue-500  rounded-md py-2 px-4 mb-4 w-full
+      focus:outline-none focus:ring-2 focus:ring-blue-400">
+       </div>
+        <div class="mb-4 text-center text-blue-700">
+      <label for="FACULTY">FACULTY</label><br>
+      <select name="Faculty" id="faculty"  class="mb-4 text-blue-700 border border-blue-500  rounded-md py-2 px-4 mb-4 w-full
+      focus:outline-none focus:ring-2 focus:ring-blue-400">
+     <option value="ENGINEERING">ENGINEERING</option>
+      <option value="SOCIAL SCIENCE">SOCIAL SCIENCE</option>
+    </select>
+    </div>
+    <div class="mb-4 text-center text-blue-700">
+    <label for="DEPARTMENT">DEPARTMENT</label><br>
+     <select name="department" id="department" class="mb-4  text-blue-700 border border-blue-500  rounded-md py-2 px-4 mb-4 w-full
+      focus:outline-none focus:ring-2 focus:ring-blue-400">
+    <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
+    <option value="ACCOUNTANCY">ACCOUNTANCY</option>
+    </select>
+    </div>
+    <div class="mb-4 text-center text-blue-700 border border-blue-500  rounded-md py-2 px-4 mb-4 w-full
+      focus:outline-none focus:ring-2 focus:ring-blue-400">
+      <label for="SEX">SEX</label><br>
+      <select name="sex" id="sex" class=" mb-4 text-blue-700 border border-blue-500  rounded-md py-2 px-4 mb-4 w-full
+      focus:outline-none focus:ring-2 focus:ring-blue-400">
+    <option value="MALE">MALE</option>
+    <option value="FEMALE">FEMALE</option>
+   </select>
+   </div>
+    <div class="mb-4 text-center text-blue-700 border border-blue-500  rounded-md py-2 px-4 mb-4 w-full
+      focus:outline-none focus:ring-2 focus:ring-blue-400">
+   <label for="ROLE">ROLE</label><br>
+   <select name="ROLE" id="role" class="border border-blue-500  rounded-md py-2 px-4 mb-4 w-full
+      focus:outline-none focus:ring-2 focus:ring-blue-400">
+     <option value="ADMIN">ADMIN</option>
+    
+   </select>
+    </div>
+    <button type="submit" class="mb-4 text-center text-white bg-blue-700 rounded-md border border-blue-500  rounded-md py-2 px-4 mb-4 w-full
+      focus:outline-none focus:ring-2 focus:ring-blue-400 hover:bg-green-400"> REGISTER</button>
+</form>
+  </div>
+   <script type="module" src="register.js"></script>
+</body>
+</html>

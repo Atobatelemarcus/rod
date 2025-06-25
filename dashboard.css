@@ -1,0 +1,52 @@
+body{
+  background-color: #1965AB;
+}
+.container{
+  display: flex;
+}
+.top_container{
+  display: flex;
+  width: 769px;
+  background-color: white ;
+  border-radius: 15px;
+}
+button{
+  width: 40px;
+  height: 20px;
+  margin: 20px;
+}
+.welwd{
+  background-color: whitesmoke;
+  color: black;
+  height: 35px;
+  width: 200px;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-right: 80px;
+  margin-top: 20px;
+}
+#welwd{
+  text-align: center;
+  align-items: center ;
+  font-size: 10px;
+  font-family: serif;
+}
+.weldept{
+  align-items: center ;
+  margin-top: 100px;
+  position: absolute;
+  text-align: center;
+  justify-items: center;
+  background-color: crimson;
+  width: 400px;
+  border-radius: 15px;
+}
+#school,#dept{
+  color: gold;
+  font-weight: bold;
+}
+.introduction{
+  color: white;
+  font-family: serif;
+  
+}

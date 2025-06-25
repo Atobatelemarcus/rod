@@ -1,0 +1,129 @@
+.container{
+  display: flex;
+  height: 50vh;
+  width: 769px;
+}
+.head-text{
+  position: absolute;
+  display: flex;
+  background-color: darkblue;
+  width: 760px;
+}
+.Head-text-first{
+  color: white;
+  text-align: center;
+  align-items: center;
+  margin-left: 250px;
+}
+#sideBar{
+  width: 200px;
+  height: 100%;
+  background-color: darkblue;
+  display:none;
+}
+label{
+  font-size: 12px;
+  font-weight: bolder;
+}
+.Form-head {
+  color: blue;
+  margin-top: 100px;
+  text-align: center;
+  margin-left: 250px;
+}
+.form-input1{
+  margin-left: 200px;
+  border-radius: 10px;
+}
+#fullname{
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  border-color: blue;
+  color: black;
+  border-radius: 15px;
+}
+#email{
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  border-color: blue;
+  color: black;
+  border-radius: 15px;
+}
+.form-input2{
+  margin-left: 200px;
+}
+#password{
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  border-color: blue;
+  color: black;
+  border-radius: 15px;
+}
+.form-input3{
+  margin-left: 200px;
+}
+#date{
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  border-color: blue;
+  color: black;
+  border-radius: 15px;
+}
+#faculty{
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  border-color: blue;
+  color: black;
+  border-radius: 15px;
+}
+#department{
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  border-color: blue;
+  color: black;
+  border-radius: 15px;
+}
+#sex{
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  border-color: blue;
+  color: black;
+  border-radius: 15px;
+}
+#role{
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  border-color: blue;
+  color: black;
+  border-radius: 15px;
+}
+
+.btn{
+  margin-left: 200px;
+  margin-top: 20px;
+  width: 300px;
+  height: 25px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  background-color: blue;
+}
+.btn:hover{
+  background-color: rgb(64, 153, 116);
+  cursor: pointer;}
+  .btn:active{
+  background-color: rgb(67, 172, 25);}
+
+#last_text{
+  margin-left: 200px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
