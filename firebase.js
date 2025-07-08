@@ -5,6 +5,7 @@ import {getDatabase} from "https://www.gstatic.com/firebasejs/11.8.1/firebase-da
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
+  apiKey: "AIzaSyAeGd0PvtisfgW1NkvViJ7EKOC7NR6WsRc",
   authDomain: "studentportal-7f849.firebaseapp.com",
   databaseURL: "https://studentportal-7f849-default-rtdb.firebaseio.com",
   projectId: "studentportal-7f849",
