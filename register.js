@@ -10,7 +10,7 @@ const form = document.getElementById("signupform");
 form.addEventListener("submit", async(e)=>{
     e.preventDefault();
     const fullname = document.getElementById("fullname").value.trim();
-    const email = document.getElementById("email").value.trim().toLowerCase() 
+    const email = document.getElementById("email").value.trim().toLowerCase();
     const password = document.getElementById("password").value;
     const sex = document.getElementById("sex").value;
     const age = document.getElementById("date").value;
