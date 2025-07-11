@@ -1,6 +1,6 @@
 import {auth,db} from './firebase.js';
 import { createUserWithEmailAndPassword} from 
-firebase/auth
+"https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js";
 
 import{ref,set} from 
 "https://www.gstatic.com/firebasejs/11.8.1/firebase-database.js";
